@@ -34,7 +34,7 @@ namespace ClickSendKisiAPI
             };
 
             HClient.DefaultRequestHeaders.Add("Authorization", "Basic " + "Kisi_API_Key");
-            HClient.DefaultRequestHeaders.Add("Content-Type", "application/json");
+            HClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         public void InitializeClickSend()
